@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--   <zk>-->
+	<desktop-config>
+	    <theme-uri>/css/bootstrap.css</theme-uri>
+	    <theme-uri>/css/bootstrap.min.css</theme-uri>
+	    <theme-uri>/css/bootstrap-responsive.css</theme-uri>
+	    <theme-uri>/css/bootstrap-responsive.min.css</theme-uri>
+	</desktop-config>
+<!--  </zk> -->

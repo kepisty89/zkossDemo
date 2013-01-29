@@ -1,0 +1,49 @@
+<?page title="Choose car" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Choose date time" border="normal">
+<borderlayout>
+<north></north>
+<center></center>
+<south></south>
+</borderlayout>
+<grid>
+    <columns>
+        <column width="100px" />
+        <column width="200px" />
+        <column label="Information" />        
+    </columns>
+    <rows>
+        <row>
+            Od kiedy?
+            <datebox id="fromDatebox" cols="24" format="long" onCreate="self.value = new Date()" mold="rounded" locale="pl" />            
+            Kiedy dokładnie wypożyczysz samochód.
+        </row>
+        <row>
+            Miasto: 
+           <combobox id="fromCityCombo" cols="24" autodrop="true" mold="rounded" buttonVisible="false"/>
+		    <zscript><![CDATA[
+		        // ListModel dictModel= new SimpleListModel(demo.data.Dictionary.getDirectory());
+		        // combo.setModel(dictModel);
+		    ]]></zscript>
+            Miasto w którym samochód zostanie wypożyczony.
+        </row>
+        <row>
+            Do kiedy?
+            <datebox id="toDatebox" cols="24" format="long" onCreate="self.value = new Date()" mold="rounded" locale="pl" />                       
+            Kiedy samochód zostanie zwrócony.
+        </row>        
+        <row>
+            Miasto:
+            <combobox id="toCityCombo" cols="24" autodrop="true" mold="rounded" buttonVisible="false"/>
+		    <zscript><![CDATA[
+		        // ListModel dictModel= new SimpleListModel(demo.data.Dictionary.getDirectory());
+		        // combo.setModel(dictModel);
+		    ]]></zscript>
+            Miasto w którym samochód zostanie oddany.
+        </row>       
+    </rows>    	
+</grid>
+	<button label="Rezerwuj auto" onClick="" height="40px" width="120px;" style="margin:10px; margin-right: 50px;"/>
+	<button label="Anuluj" onClick="" height="40px;" width="100px;"/>
+</window>
+</zk>

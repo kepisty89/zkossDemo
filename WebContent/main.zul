@@ -1,0 +1,41 @@
+<?page title="Run A Car" contentType="text/html;charset=UTF-8"?>
+<zk>
+<borderlayout sclass="complex-layout">
+	<north>
+		<div>
+	        <div style="float:right">
+	            <textbox sclass="demo-search-inp" value="@bind(vm.search)" />
+	            <button label="Search ZK Resource" onClick="@command('search')" />	           
+	        </div>
+	        <image sclass="complex-layout-header-img" src="/images/ZK-Logo.gif" />
+	    </div>
+	</north>
+	<west width="200px" border="0" flex="true" splittable="false" margins="0,5,0,0">
+		<vlayout spacing="0">
+			<panel width="100%" border="normal" title="Booking services">
+			    <panelchildren style="padding:5px;">
+			        <vbox>
+			            <toolbarbutton label="Rent a car" />
+			            <toolbarbutton label="Book hotel" />
+			            <toolbarbutton label="Book flight" />
+			            <toolbarbutton label="Calendar" />
+			        </vbox>			        
+			    </panelchildren>
+			</panel>
+		</vlayout>
+	</west>
+	<center>
+		<menubar>
+			<menu label="File">
+				<menupopup>
+					<menuitem label="New" />
+					<menuseparator />
+					<menuitem label="Open" />
+				</menupopup>
+			</menu>
+			<menuseparator />
+			<menuitem label="About" />
+		</menubar>		
+	</center>
+</borderlayout>
+</zk>

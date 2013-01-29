@@ -1,0 +1,63 @@
+<html xmlns:zk="zk" xmlns:z="zul">
+  <head>
+	<title>Car Rental Portal - RunAcar</title>
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen"></link>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"></link> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>    
+    <zkhead/><!-- a special tag to indicate where to generate ZK CSS and JS files -->    	
+	</head>
+	<body style="height:auto">
+	    
+		<!-- Twitter bootstrap navigation bar -->
+		<div class="navbar navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">        
+	          <a class="brand" href="index.html"><img src="images/car-icon.png" width="17" style="margin-right: 10px;"/>Car rental</a>
+	          <div class="nav-collapse collapse">
+	              <ul class="nav">
+	                <li class="active"><a href="#">Home</a></li>	               
+	                <li class="dropdown">
+	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Currency<b class="caret"></b></a>                  
+	                  <ul class="dropdown-menu">                    
+	                    <li><a href="#"><span class="badge badge-inverse">złoty - zł</span> Poland</a></li>
+	                    <li><a href="#"><span class="badge badge-inverse">Euro - &#8364;</span> Euro</a></li>
+	                    <li><a href="#"><span class="badge badge-inverse">Dollar - $</span> United States</a></li>                                       
+	                  </ul>
+	                </li>                
+	              </ul>            
+	          </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
+	    </div><!-- /navigation bar -->
+	         
+
+		<div class="row">
+		  <div class="span12">		  	    
+			    <div class="container" style="margin-top: 45px;"><!-- Main container -->			    									           
+				        <z:borderlayout sclass="complex-layout" height="810px">
+							<z:west width="200px" border="0" flex="false" splittable="true" margins="0,5,0,0">
+								<z:vlayout spacing="0">
+									<z:panel width="100%" border="normal" title="Booking services">
+									    <z:panelchildren style="padding:5px;">
+									        <z:vbox>
+									            <z:toolbarbutton label="Rent a car" />
+									            <z:toolbarbutton label="Book hotel" />
+									            <z:toolbarbutton label="Book flight" />
+									            <z:toolbarbutton label="Calendar" />
+									        </z:vbox>			        
+									    </z:panelchildren>
+									</z:panel>                 
+								</z:vlayout>
+							</z:west>
+						</z:borderlayout>
+			    </div><!-- / Main container -->
+			</div>
+		  <div class="span8">...</div>
+		</div>		
+
+	
+		<!-- Scripts - load page content first. -->
+	    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	    <script src="js/bootstrap.min.js"></script>         
+	</body>
+</html>
